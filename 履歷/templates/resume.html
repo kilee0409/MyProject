@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+        font-family: "Noto Sans TC", sans-serif;
+      }
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto 50px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+      }
+      .profile {
+        width: 250px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 20px 10px 20px;
+        background-color: #1971c2;
+        color: #f8f9fa;
+      }
+      .reusme-container {
+        width: 500px;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .about {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .img {
+        width: 150px;
+        height: 200px;
+        margin: 0 auto;
+        padding-top: 20px;
+      }
+      .img img {
+        width: 100%;
+      }
+      .name {
+        padding-top: 20px;
+        text-align: center;
+      }
+      ul {
+        list-style-position: inside;
+        padding: 0px 5px 10px;
+      }
+      h3 {
+        font-size: 32px;
+        font-weight: 700;
+      }
+      h4 {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 300;
+      }
+      .project > ul > li > p {
+        margin: 0.5rem 0;
+      }
+      @media screen and (max-width: 960px) {
+        .wrap {
+          min-width: 50rem;
+          flex-direction: column;
+        }
+        .profile {
+          width: 100%;
+          padding: 0;
+          margin-top: 0;
+          align-items: center;
+          font-size: 1.8rem;
+        }
+        .reusme-container {
+          min-width: 50rem;
+          padding: 10rem;
+          width: 100%;
+          justify-content: space-around;
+        }
+        h3 {
+          text-align: center;
+          font-size: 3rem;
+        }
+        h4 {
+          text-align: center;
+          font-size: 2.4rem;
+          font-weight: 500;
+        }
+        p {
+          font-size: 1.8rem;
+        }
+        ul {
+          list-style-position: outside;
+        }
+        .langue,
+        .project {
+          align-self: center;
+          font-size: 1.8rem;
+          padding-bottom: 1rem;
+        }
+        .langue ul,
+        .project ul {
+          padding-top: 1rem;
+        }
+      }
+    </style>
+    <title>resume</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="profile">
+        <div class="img">
+          <img src="../static/img/照片.jpg" alt="李穎祈" />
+        </div>
+        <div class="name">
+          <p>李穎祈</p>
+          <p class="english">Esther Lee</p>
+        </div>
+        <div class="contact">
+          <p>tel：0901-197-701</p>
+          <p>E-mail：killee88049@gmail.com</p>
+          <p>通訊地址：台北市南港區</p>
+        </div>
+        <div class="education">
+          <h4>學歷</h4>
+          <p>國立暨南國際大學 中國語文學系</p>
+          <p>大學畢業 2017/6 ~ 2021/7</p>
+        </div>
+
+        <div class="certificate">
+          <h4>證照與課程</h4>
+          <ul>
+            <li>MTA Python 程式語言核心能力</li>
+            <li>
+              臺大資訊系統訓練班：
+              <p>Python x GCP 雲端程式開發實戰</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="software">
+          <h4>電腦軟體</h4>
+          <ul>
+            <li>InDesign</li>
+            <li>Illustrator</li>
+            <li>Photoshop</li>
+          </ul>
+        </div>
+
+        <div class="code">
+          <h4>程式語言</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+          </ul>
+        </div>
+      </div>
+      <div class="reusme-container">
+        <div class="about">
+          <h3>自傳</h3>
+          <p>2021年畢業於國立暨南國際大學中國語文學系。</p>
+          <p>
+            小時候，因為家人工作的緣故，時常在兩岸三地往返，在不停的轉換環境的狀況下，養成了能在陌生的環境下快速適應的韌性。
+          </p>
+          <h4>求學經歷</h4>
+          <p>
+            大學期間專注修讀文學理論以及論文書寫，課業上的訓練使我在查找資料以及引用上得心應手。尤其在專題論文的選題到下筆的過程，題目不停的被推翻，又要從龐大且繁雜的資料中抽絲剝繭，也讓我培養出了堅持與耐心。
+          </p>
+          <p>
+            大二的時候協助系上舉辦大學部論文發表會，過程中雖然遭遇了不少困難，如：徵稿不足、活動、場地日期頻繁變更等，但從中也讓我收穫到面臨意外時不需慌張，鎮靜地完成工作的經驗。
+          </p>
+          <p>
+            大四的畢業製作由於本身對創作感興趣，因此選擇了創作組，同時參加了校內的文學獎獲得了散文首獎。在此期間我擔任了創作組的副編輯，負責統籌班上同學印前製作的進度，期間不僅應用了選修課程所習得的知識，也從中學習到如何與老師、同學、印刷厰等多方的溝通中合作一同完成作品集。
+          </p>
+          <h4>職訓局——物聯網應用設計</h4>
+          <p>
+            畢業後因為疫情的緣故，參加了職訓局的物聯網班，其中網頁製作的課程勾起了我對網頁的興趣。由於課程內容教學較為側重與抓取數據與遠距控制開發版，在畫面呈現與互動都較為簡單，無法滿足我對網頁的好奇心，因此每天課程結束後，回家就會開始跟著udemy上的英文課程自學，以及參加臺大的資訊系統訓練班學習。
+          </p>
+          <p>
+            長久以來，只要是自己感興趣的事物，我都會想盡辦法去研究，並想方設法的做到好，不論是在文學研究、寫作，又或是網頁製作。因為完成喜歡的事情時從中又學習到新的知識，會使我有成就感。
+          </p>
+        </div>
+        <div class="langue">
+          <h4>語言能力</h4>
+          <ul>
+            <li>英文：TOEIC (多益測驗) 630分</li>
+            <li>粵語：流暢溝通</li>
+          </ul>
+        </div>
+        <div class="project">
+          <h4>專題</h4>
+          <ul>
+            <li>
+              <a href="https://try-lottery.df.r.appspot.com/">樂透查詢</a>
+              <p>1.利用Beautiful Soup爬取台灣彩券當期樂透開獎資料</p>
+              <p>2.利用GCP 排程定期更新資料，存放至Firebase中</p>
+              <p>3.可使用linebot 樂透期號 查詢 當期資訊</p>
+              <p>line bot ID：@600usrxm</p>
+            </li>
+            <li>
+              <a href="https://taipeiyoubike2.de.r.appspot.com"
+                >臺北市Youbike2.0即時查詢</a
+              >
+              <p>
+                讀取政府資料開放平臺提供的Api即時資訊，讓使用者可以搜尋目前空位、可使用數量、地點等資訊。
+              </p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://github.com/kilee0409">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
