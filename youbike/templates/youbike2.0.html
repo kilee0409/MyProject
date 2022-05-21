@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouBike2.0 臺北市資料</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">YouBike2.0 臺北市資料</span>
+      </div>
+    </nav>
+    <div class="container">
+      <!--區域搜索-->
+      <select name="area" id="area" class="form-select">
+        <option value="100">中正區</option>
+        <option value="103">大同區</option>
+        <option value="104">中山區</option>
+        <option value="105">松山區</option>
+        <option value="106">大安區</option>
+        <option value="108">萬華區</option>
+        <option value="110">信義區</option>
+        <option value="111">士林區</option>
+        <option value="112">北投區</option>
+        <option value="114">內湖區</option>
+        <option value="115">南港區</option>
+        <option value="116">文山區</option>
+      </select>
+      <input type="submit" class="sub btn btn-success" onclick="getArea();" />
+      <button class="clear btn btn-secondary" onclick="clearShow();">
+        清空
+      </button>
+      <!--刷新資料-->
+      <button class="ref btn btn-info" onclick="reload();">刷新資料</button>
+    </div>
+    <!--取得資料并且顯示-->
+    <div class="container">
+      <div id="show" class="row row-cols-1 row-cols-md-2 row-cols-lg-4"></div>
+    </div>
+    <script src="../static/youbike.js"></script>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
